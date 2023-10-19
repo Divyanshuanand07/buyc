@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Second-Hand Car Details</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Second-Hand Car Details</h1>
+        <div class="car-details-form">
+            <div class="form-group">
+                <label for="car-image">Car Image URL:</label>
+                <input type="text" id="car-image" placeholder="Enter image URL" required>
+            </div>
+            <div class="form-group">
+                <label for="car-title">Car Title:</label>
+                <input type="text" id="car-title" placeholder="Enter car title" required>
+            </div>
+            <div class="form-group">
+                <label for="car-description">Car Description:</label>
+                <ul id="car-description">
+                    <li><input type="text" placeholder="Bullet point 1" required></li>
+                    <li><input type="text" placeholder="Bullet point 2" required></li>
+                    <li><input type="text" placeholder="Bullet point 3" required></li>
+                    <li><input type="text" placeholder="Bullet point 4" required></li>
+                    <li><input type="text" placeholder="Bullet point 5" required></li>
+                </ul>
+            </div>
+            <button onclick="submitCarDetails()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

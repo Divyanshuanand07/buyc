@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this is a sign up page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Authentication</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="tabs">
+                <div class="tab" id="login-tab">Login</div>
+                <div class="tab" id="signup-tab">Sign Up</div>
+            </div>
+            <div class="form-content">
+                <div id="login-form">
+                   
+                    <input type="text" id="login-username" placeholder="Username" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+
+                    <button onclick="login()">Login</button>
+                </div>
+                <div id="signup-form" style="display: none;">
+                    <input type ="text" id="user-name" placeholder="Name" required>
+                    <input type="email" id="email-id" placeholder="Email" required>
+                    <input type="text" id="signup-username" placeholder="Username" required>
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                    <button onclick="signup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
